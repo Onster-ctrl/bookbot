@@ -4,11 +4,11 @@ def count_words(text):
     return word_count
 
 def character_counts(text):
-    counts = {}
+    char_dict = {}
     text = text.lower()
     for char in text:
-        if char in counts:
-            counts[char] += 1
+        if char in char_dict:
+            char_dict[char] += 1
         else:
-            counts[char] = 1
-    return counts
+            char_dict[char] = 1
+    return char_dict
